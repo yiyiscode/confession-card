@@ -5,10 +5,10 @@
    請到 https://www.emailjs.com/ 申請帳號後，把下面四個值換成你自己的。
    詳細步驟見 SETUP.md。在填好之前，通知會照設計靜默失敗，不影響情書畫面。
    ========================================================= */
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-const ASKER_EMAIL = "your-email@example.com";
+const EMAILJS_SERVICE_ID = "service_j9xaqcj";
+const EMAILJS_TEMPLATE_ID = "template_zrbh774";
+const EMAILJS_PUBLIC_KEY = "cR1FxUs2wwy1wJrf3";
+const ASKER_EMAIL = "az045317@gmail.com";
 
 try {
   if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
