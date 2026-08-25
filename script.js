@@ -6,7 +6,7 @@
    詳細步驟見 SETUP.md。在填好之前，通知會照設計靜默失敗，不影響情書畫面。
    ========================================================= */
 const EMAILJS_SERVICE_ID = "service_j9xaqcj";
-const EMAILJS_TEMPLATE_ID = "template_zrbh774";
+const EMAILJS_TEMPLATE_ID = "template_bml76de";
 const EMAILJS_PUBLIC_KEY = "cR1FxUs2wwy1wJrf3";
 const ASKER_EMAIL = "az045317@gmail.com";
 
