@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拜託跟我約會</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sky">
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="cloud cloud-c"></div>
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✦</div>
+    <div class="sparkle s3">✧</div>
+    <div class="skyline"></div>
+  </div>
+
+  <main class="stage">
+
+    <!-- 畫面一：Yes / No 提問畫面 -->
+    <section id="screen-ask" class="screen">
+      <div class="pixel-frame photo-frame">
+        <div class="cat-scene">
+          <div class="cat cat-cream">
+            <div class="ear ear-l"></div>
+            <div class="ear ear-r"></div>
+            <div class="face">
+              <div class="cheek cheek-l"></div>
+              <div class="cheek cheek-r"></div>
+              <div class="eye eye-l"></div>
+              <div class="eye eye-r"></div>
+            </div>
+          </div>
+          <div class="cat cat-gray">
+            <div class="ear ear-l"></div>
+            <div class="ear ear-r"></div>
+            <div class="face">
+              <div class="cheek cheek-l"></div>
+              <div class="cheek cheek-r"></div>
+              <div class="eye eye-l"></div>
+              <div class="eye eye-r"></div>
+            </div>
+          </div>
+          <div class="floating-heart">❤</div>
+        </div>
+      </div>
+
+      <p class="question">你願意跟我出去嗎？</p>
+
+      <div class="button-row">
+        <button id="btn-yes" class="btn btn-yes" type="button">YES<span>+</span></button>
+        <button id="btn-no" class="btn btn-no" type="button">No</button>
+      </div>
+      <p id="no-phrase" class="no-phrase"></p>
+    </section>
+
+    <!-- 畫面二：慶祝畫面 -->
+    <section id="screen-celebrate" class="screen hidden">
+      <div class="pixel-frame photo-frame celebrate-frame">
+        <div class="cat-scene">
+          <div class="cat cat-cream">
+            <div class="ear ear-l"></div>
+            <div class="ear ear-r"></div>
+            <div class="face">
+              <div class="cheek cheek-l"></div>
+              <div class="cheek cheek-r"></div>
+              <div class="eye eye-l"></div>
+              <div class="eye eye-r"></div>
+            </div>
+          </div>
+          <div class="cat cat-gray">
+            <div class="ear ear-l"></div>
+            <div class="ear ear-r"></div>
+            <div class="face">
+              <div class="cheek cheek-l"></div>
+              <div class="cheek cheek-r"></div>
+              <div class="eye eye-l"></div>
+              <div class="eye eye-r"></div>
+            </div>
+          </div>
+          <div class="floating-heart">❤</div>
+        </div>
+      </div>
+      <p class="celebrate-title">耶！</p>
+      <p class="celebrate-sub">Uni小寶貝答應我了，我真的好開心。</p>
+      <div class="button-row">
+        <button id="btn-next" class="btn btn-yes" type="button">按一下繼續 →</button>
+      </div>
+    </section>
+
+    <!-- 畫面三：日曆選日 -->
+    <section id="screen-calendar" class="screen hidden">
+      <div class="pixel-frame calendar-frame">
+        <div class="calendar-header">
+          <button id="cal-prev" class="cal-nav" type="button">◀</button>
+          <span id="cal-title" class="cal-title"></span>
+          <button id="cal-next" class="cal-nav" type="button">▶</button>
+        </div>
+        <div class="calendar-weekdays">
+          <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+        </div>
+        <div id="cal-grid" class="calendar-grid"></div>
+      </div>
+      <p class="hint">選一天，我們就約定好了 🐾</p>
+    </section>
+
+    <!-- 畫面四：情書（仿記事本視窗） -->
+    <section id="screen-letter" class="screen hidden">
+      <div class="notepad-window">
+        <div class="notepad-titlebar">
+          <span class="notepad-filename">📄 情書.txt</span>
+          <div class="notepad-controls">
+            <span class="nc nc-min">_</span>
+            <span class="nc nc-max">▢</span>
+            <span class="nc nc-close">✕</span>
+          </div>
+        </div>
+        <div class="notepad-body">
+          <pre id="letter-content" class="letter-content"></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
